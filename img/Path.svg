@@ -1,0 +1,12 @@
+<svg width="713" height="895" viewBox="0 0 713 895" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line x1="56.6066" y1="859.431" x2="80.5905" y2="883.415" stroke="black" stroke-width="15" stroke-linecap="round"/>
+<line x1="81.2952" y1="883.21" x2="105.279" y2="859.226" stroke="black" stroke-width="15" stroke-linecap="round"/>
+<circle cx="28" cy="176.227" r="23" fill="white" stroke="black" stroke-width="10"/>
+<circle cx="650" cy="41.2266" r="23" fill="white" stroke="black" stroke-width="10"/>
+<circle cx="390" cy="337.227" r="23" fill="white" stroke="black" stroke-width="10"/>
+<circle cx="493" cy="727.227" r="23" fill="white" stroke="black" stroke-width="10"/>
+<path d="M78 174.227C310 130.727 296 71.2269 372 30.227C442.334 -7.71616 555.5 10.227 629 30.227M667.5 55.2268C735.5 117.727 743 300.427 415 335.227" stroke="black" stroke-width="15" stroke-dasharray="100 65"/>
+<path d="M367.5 344.727C337.58 350.444 297.817 363.664 272 385.122C242.882 409.324 231.504 444.006 272 490.227C367.5 599.227 628.767 467.849 675.5 537.227C724 609.227 608.5 716.227 518 722.727" stroke="black" stroke-width="15" stroke-dasharray="100 75"/>
+<path d="M470.5 733.227C366 755.726 157.5 727.227 121 737.727C80.7687 749.3 79.5 763.227 79.5 798.227C79.5 826.227 79.5 863.227 79.5 878.227" stroke="black" stroke-width="15" stroke-linejoin="round" stroke-dasharray="150 75"/>
+<path d="M79.5 860.227V823.727" stroke="black" stroke-width="15"/>
+</svg>
