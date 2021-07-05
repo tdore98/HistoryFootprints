@@ -49,3 +49,7 @@ h3 {
 p {
     margin-bottom: 0.5rem;
 }
+
+.bold {
+    font-weight: 600;
+}
