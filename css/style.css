@@ -1,7 +1,104 @@
-:root {
-    --mango: #FEC024;
-    --greenForest: #146232;
-    --navyBlue: #2C5C6F;
-    --pink: #EE1D46;
-    --white: #FFFFFF; 
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid black; */
+}
+
+.flexbox {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.icon {
+    max-height: 2em;
+    width: auto;
+}
+
+.logo {
+    max-height: 3em;
+    width: auto;
+}
+
+.icon:hover,
+.logo:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.btn {
+    text-decoration: none;
+    color: var(--white);
+    background: var(--blueNavy);
+    padding: 0.5em 0.75em;
+    border-radius: 0.5em;
+    display: block;
+    max-width: 8em;
+    text-align: center;
+    text-transform: uppercase;
+    transition: background 300ms;
+}
+
+.btn:not(:last-child) {
+    margin-bottom: 0.5em;
+}
+
+.btn:hover {
+    opacity: 0.7;
+    background: var(--pink);
+}
+
+section {
+    padding: 2em;
+}
+
+#main-nav {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.full-page {
+    width: 100%;
+    height: 100vh;
+}
+
+#landing {
+    background-color: var(--yellowMango);
+    background-image: url(../img/b-line_desktop.svg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-x: right;
+    background-position-y: bottom;
+}
+
+.landing-content {
+    align-items: center;
+    height: 100%;
+}
+
+#landing .content-left {
+    flex: 60% 0 0;
+}
+
+#landing h1 {
+    text-transform: uppercase;
+}
+
+#landing h3 {
+    font-size: 1.5em;
+}
+
+#landing .btn-container {
+    margin-top: 2em;
 }

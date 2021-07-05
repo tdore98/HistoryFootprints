@@ -1,0 +1,12 @@
+<svg width="677" height="865" viewBox="0 0 677 865" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line x1="10.6066" y1="830.205" x2="34.5905" y2="854.189" stroke="#146232" stroke-width="15" stroke-linecap="round"/>
+<line x1="35.2949" y1="853.984" x2="59.2788" y2="830" stroke="#146232" stroke-width="15" stroke-linecap="round"/>
+<circle cx="90" cy="147" r="23" stroke="#146232" stroke-width="10"/>
+<circle cx="628" cy="44.9995" r="23" stroke="#146232" stroke-width="10"/>
+<circle cx="344" cy="308" r="23" stroke="#146232" stroke-width="10"/>
+<circle cx="447" cy="698" r="23" stroke="#146232" stroke-width="10"/>
+<path d="M111 144C343 100.5 280.571 54.577 363.5 30.5C421 13.806 464.5 -8.99999 612 26.0002M638 61.9997C706 124.5 697 271.2 369 306" stroke="#146232" stroke-width="15" stroke-dasharray="100 65"/>
+<path d="M321.5 315.5C291.58 321.218 251.817 334.437 226 355.895C196.882 380.097 185.504 414.78 226 461C321.5 570 582.767 438.623 629.5 508C678 580 562.5 687 472 693.5" stroke="#146232" stroke-width="15" stroke-dasharray="100 75"/>
+<path d="M424.5 704C320 726.5 111.5 698 75 708.5C34.7687 720.074 33.5 734 33.5 769C33.5 797 33.5 834 33.5 849" stroke="#146232" stroke-width="15" stroke-linejoin="round" stroke-dasharray="150 75"/>
+<path d="M33.5 831V794.5" stroke="#146232" stroke-width="15"/>
+</svg>

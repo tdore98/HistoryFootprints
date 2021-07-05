@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'akzidenz-grotesk_bqlight';
+    src: url('../fonts/akzidenzgrotesk-light-webfont.woff2') format('woff2'), url('../fonts/akzidenzgrotesk-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Georgia-Bold';
+    src: url('../fonts/Georgia-Bold.ttf') format('truetype'), url('../fonts/Georgia-Bold.woff') format('woff'), url('../fonts/georgia bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html,
+body {
+    font-family: 'akzidenz-grotesk_bqregular', sans-serif;
+    /* font-size: 16px; */
+    scroll-behavior: smooth;
+}
+
+body,
+button {
+    font-size: 1.1em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 4em;
+    font-family: 'Georgia-Bold', serif;
+    color: var(--greenForest);
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 3em;
+    font-family: 'Georgia-Bold', serif;
+    margin-bottom: 0.5rem;
+}
+
+h3 {
+    font-size: 2.75em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    margin-bottom: 0.5rem;
+}
