@@ -24,6 +24,8 @@ img {
 .icon {
     max-height: 2em;
     width: auto;
+    /* width: fit-content;
+    aspect-ratio: 1 / 1; */
 }
 
 .logo {
@@ -46,7 +48,7 @@ img {
     display: block;
     max-width: 8em;
     text-align: center;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     transition: background 300ms;
 }
 
@@ -71,6 +73,44 @@ img {
 section {
     padding: 4em;
     width: 100%;
+}
+
+#drawer-nav {
+    position: fixed;
+    flex-direction: column;
+    padding: 2.5em;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    opacity: 0.9;
+    /* filter: blur(4px); */
+    height: 100vh;
+    min-width: 25vw;
+    background-color: white;
+}
+
+.drawer-nav-top {
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.drawer-nav-items {
+    flex-direction: column;
+}
+
+.drawer-nav-items a {
+    text-decoration: none;
+    color: black;
+    font-size: 2em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+.drawer-nav-items-sub a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
 }
 
 #main-nav {
@@ -100,9 +140,10 @@ section {
     flex: 60% 0 0;
 }
 
-#landing h1 {
+
+/* #landing h1 {
     text-transform: uppercase;
-}
+} */
 
 #landing h3 {
     font-size: 1.5em;
