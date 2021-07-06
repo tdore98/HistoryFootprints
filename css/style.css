@@ -24,6 +24,8 @@ img {
 .icon {
     max-height: 2em;
     width: auto;
+    /* width: fit-content;
+    aspect-ratio: 1 / 1; */
 }
 
 .logo {
@@ -46,7 +48,7 @@ img {
     display: block;
     max-width: 8em;
     text-align: center;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     transition: background 300ms;
 }
 
@@ -71,6 +73,55 @@ img {
 section {
     padding: 4em;
     width: 100%;
+}
+
+#drawer-nav {
+    position: fixed;
+    flex-direction: column;
+    padding: 2.5em;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    height: 100vh;
+    min-width: 25vw;
+    background: rgba( 255, 255, 255, 0.7);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 6px);
+    -webkit-backdrop-filter: blur( 4px);
+    border: 1px solid rgba( 255, 255, 255, 0.18);
+    left: -100%;
+    transition: left 300ms;
+    z-index: 999;
+}
+
+.drawer-nav-top {
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.drawer-nav-items {
+    flex-direction: column;
+}
+
+.drawer-nav-items a {
+    text-decoration: none;
+    color: black;
+    font-size: 2em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    width: fit-content;
+}
+
+.drawer-nav-items-sub a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+}
+
+.drawer-nav-items a:hover {
+    color: var(--pink);
+    cursor: pointer;
 }
 
 #main-nav {
@@ -100,9 +151,10 @@ section {
     flex: 60% 0 0;
 }
 
-#landing h1 {
+
+/* #landing h1 {
     text-transform: uppercase;
-}
+} */
 
 #landing h3 {
     font-size: 1.5em;
@@ -139,6 +191,10 @@ section {
     background: #ccc;
 }
 
+.card-container {
+    justify-content: space-between;
+}
+
 .card-container .card-wrapper:not(:last-child) {
     margin-right: 2em;
 }
@@ -151,7 +207,8 @@ section {
     transition: box-shadow 300ms;
     cursor: pointer;
     display: flex;
-    width: 25%;
+    width: 22.5%;
+    margin-bottom: 2em;
 }
 
 .card {
@@ -232,4 +289,51 @@ footer {
 
 .footer a:last-child {
     padding-left: 0.5em;
+}
+
+.header-wrapper {
+    margin: 4em 0;
+    color: var(--greenForest);
+}
+
+.header-wrapper h3 {
+    font-size: 1.3em;
+}
+
+.location-card-grid {
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.location-card-grid .card-wrapper:not(:last-child) {
+    margin-right: 2em;
+}
+
+.faq-grid {
+    flex-direction: column;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.question-container {
+    border: solid 2px var(--greenForest);
+    border-radius: 30px;
+    padding: 1em 1.25em;
+}
+
+.question-container:not(:last-child) {
+    margin-bottom: 1em;
+}
+
+.question {
+    justify-content: space-between;
+}
+
+.question p {
+    font-weight: bold;
+    padding-bottom: 0.5em;
+}
+
+.question-active p {
+    text-decoration: underline;
 }
