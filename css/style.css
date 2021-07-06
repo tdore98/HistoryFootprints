@@ -81,11 +81,15 @@ section {
     padding: 2.5em;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
-    opacity: 0.9;
-    /* filter: blur(4px); */
     height: 100vh;
     min-width: 25vw;
-    background-color: white;
+    background: rgba( 255, 255, 255, 0.7);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 6px);
+    -webkit-backdrop-filter: blur( 4px);
+    border: 1px solid rgba( 255, 255, 255, 0.18);
+    left: -100%;
+    transition: left 300ms;
 }
 
 .drawer-nav-top {
@@ -103,6 +107,7 @@ section {
     font-size: 2em;
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
+    width: fit-content;
 }
 
 .drawer-nav-items-sub a {
@@ -111,6 +116,11 @@ section {
     font-size: 1.5em;
     font-family: 'Open Sans', sans-serif;
     font-weight: normal;
+}
+
+.drawer-nav-items a:hover {
+    color: var(--pink);
+    cursor: pointer;
 }
 
 #main-nav {

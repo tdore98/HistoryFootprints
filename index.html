@@ -18,20 +18,21 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/fonts.css">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
     <nav id="drawer-nav" class="flexbox">
         <div class="drawer-nav-top flexbox">
-            <img class="icon" src="img/close.svg" alt="close button" aria-label="close menu button">
+            <img id="close-menu" class="icon" src="img/close.svg" alt="close button" aria-label="close menu button">
         </div>
 
         <div class="drawer-nav-items flexbox">
             <a href="index.html">Home</a>
             <a href="locations.html">Locations</a>
-            <div class="drawer-nav-items-sub">
+            <!-- <div class="drawer-nav-items-sub">
                 <a href="locations.html">All Locations</a>
-            </div>
+            </div> -->
             <a href="faq.html">FAQ</a>
         </div>
     </nav>
@@ -39,7 +40,7 @@
     <section class="full-page" id="landing">
         <nav id="main-nav" class="flexbox">
             <div class="left">
-                <img class="icon" src="img/menu.svg" alt="Menu Icon">
+                <img id="menu" class="icon" src="img/menu.svg" alt="Menu Icon" aria-label="menu button">
             </div>
 
             <div class="right">
@@ -146,6 +147,8 @@
             <a href="checkin.html" class="btn-link">Check-In</a>
         </section>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
