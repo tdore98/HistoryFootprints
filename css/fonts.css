@@ -12,15 +12,16 @@
     font-style: normal;
 }
 
-html,
-body {
-    font-family: 'akzidenz-grotesk_bqregular', sans-serif;
+html {
+    font-family: 'Open Sans', sans-serif;
     /* font-size: 16px; */
     scroll-behavior: smooth;
 }
 
 body,
-button {
+button,
+input,
+textarea {
     font-size: 1.1em;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;

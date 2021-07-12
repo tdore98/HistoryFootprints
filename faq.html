@@ -16,6 +16,7 @@
 
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive-style.css">
     <link rel="stylesheet" href="css/fonts.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -28,12 +29,12 @@
         </div>
 
         <div class="drawer-nav-items flexbox">
-            <a href="index.html">Home</a>
-            <a href="locations.html">Locations</a>
+            <a class="drawer-link" href="index.html">Home</a>
+            <a class="drawer-link" href="locations.html">Locations</a>
             <!-- <div class="drawer-nav-items-sub">
-                <a href="locations.html">All Locations</a>
+                <a class="drawer-link" href="locations.html">All Locations</a>
             </div> -->
-            <a href="faq.html">FAQ</a>
+            <a class="drawer-link" href="faq.html">FAQ</a>
         </div>
     </nav>
 
@@ -44,7 +45,9 @@
             </div>
 
             <div class="right">
-                <img class="logo" src="img/history-footsteps-logo.png" alt="History Footsteps Logo">
+                <a href="index.html">
+                    <img class="logo" src="img/history-footsteps-logo.png" alt="History Footsteps Logo">
+                </a>
             </div>
         </nav>
 
@@ -55,50 +58,88 @@
 
         <div class="faq-grid flexbox">
             <div class="question-container">
-                <div class="question question-active flexbox">
+                <div class="question flexbox">
                     <p>What is History Footsteps?</p>
 
                     <img class="icon" src="img/Caret.svg" alt="">
                 </div>
 
-                <p class="answer ">Ut molestie lectus id arcu lacus. Nisl amet in sapien ipsum. Eu nec, duis tristique tempus egestas. Dictum diam velit hac potenti. Sed gravida egestas id sodales lacus ac. Id massa eu tincidunt blandit lectus. Morbi commodo ac convallis
+                <p class="answer">Ut molestie lectus id arcu lacus. Nisl amet in sapien ipsum. Eu nec, duis tristique tempus egestas. Dictum diam velit hac potenti. Sed gravida egestas id sodales lacus ac. Id massa eu tincidunt blandit lectus. Morbi commodo ac convallis
                     enim. Interdum sit donec ut ut vel egestas quam. Nunc nunc duis massa blandit. Gravida sem quam tellus.</p>
             </div>
 
             <div class="question-container">
-                <div class="question question-active flexbox">
+                <div class="question flexbox">
                     <p>I have some concerns with the information. What should I do?</p>
 
                     <img class="icon" src="img/Caret.svg" alt="">
                 </div>
 
-                <p class="answer ">Ut molestie lectus id arcu lacus. Nisl amet in sapien ipsum. Eu nec, duis tristique tempus egestas. Dictum diam velit hac potenti. Sed gravida egestas id sodales lacus ac. Id massa eu tincidunt blandit lectus. Morbi commodo ac convallis
+                <p class="answer">Ut molestie lectus id arcu lacus. Nisl amet in sapien ipsum. Eu nec, duis tristique tempus egestas. Dictum diam velit hac potenti. Sed gravida egestas id sodales lacus ac. Id massa eu tincidunt blandit lectus. Morbi commodo ac convallis
                     enim. Interdum sit donec ut ut vel egestas quam. Nunc nunc duis massa blandit. Gravida sem quam tellus.</p>
             </div>
 
             <div class="question-container">
-                <div class="question question-active flexbox">
+                <div class="question flexbox">
+                    <p>The site isn't functioning properly. Please help me.</p>
+
+                    <img class="icon" src="img/Caret.svg" alt="">
+                </div>
+
+                <p class="answer">Ut molestie lectus id arcu lacus. Nisl amet in sapien ipsum. Eu nec, duis tristique tempus egestas. Dictum diam velit hac potenti. Sed gravida egestas id sodales lacus ac. Id massa eu tincidunt blandit lectus. Morbi commodo ac convallis
+                    enim. Interdum sit donec ut ut vel egestas quam. Nunc nunc duis massa blandit. Gravida sem quam tellus.</p>
+            </div>
+
+            <div class="question-container">
+                <div class="question flexbox">
                     <p>I'm not sure what's going on.</p>
 
                     <img class="icon" src="img/Caret.svg" alt="">
                 </div>
 
-                <p class="answer ">Ut molestie lectus id arcu lacus. Nisl amet in sapien ipsum. Eu nec, duis tristique tempus egestas. Dictum diam velit hac potenti. Sed gravida egestas id sodales lacus ac. Id massa eu tincidunt blandit lectus. Morbi commodo ac convallis
-                    enim. Interdum sit donec ut ut vel egestas quam. Nunc nunc duis massa blandit. Gravida sem quam tellus.</p>
+                <div class="answer">
+                    <p class="bold">Contact us! We'll try our best to figure out what's wrong.</p>
+
+                    <form action="">
+                        <div class="form-field">
+                            <label for="full-name">Full Name*</label>
+                            <input id="full-name" type="text" placeholder="Enter your full name.">
+                        </div>
+
+                        <div class="form-field">
+                            <label for="phone-number">Phone Number*</label>
+                            <input id="phone-number" type="tel" placeholder="Enter your phone number.">
+                        </div>
+
+                        <div class="form-field">
+                            <label for="email">Email*</label>
+                            <input id="email" type="email" placeholder="Enter your email.">
+                        </div>
+
+                        <div class="form-field-last form-field flexbox">
+                            <div class="textarea-wrapper">
+                                <label for="question-problem">Question/Problem</label>
+                                <textarea name="question-problem" id="question-problem" cols="30" rows="10" placeholder="Enter your question/problem."></textarea>
+                            </div>
+
+                            <input class="btn" id="faq-submit" type="submit" value="Submit Form">
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
 
     <footer>
-        <section class="footer flexbox ">
-            <a href="index.html " class="bold btn-link ">History Footsteps</a>
-            <a href="faq.html " class="btn-link ">FAQ</a>
-            <a href="locations.html " class="btn-link ">Locations</a>
-            <a href="checkin.html " class="btn-link ">Check-In</a>
+        <section class="footer flexbox">
+            <a href="index.html" class="bold btn-link">History Footsteps</a>
+            <a href="faq.html" class="btn-link">FAQ</a>
+            <a href="locations.html" class="btn-link">Locations</a>
+            <a href="checkin.html" class="btn-link">Check-In</a>
         </section>
     </footer>
 
-    <script src="js/script.js "></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

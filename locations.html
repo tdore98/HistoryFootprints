@@ -16,6 +16,7 @@
 
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive-style.css">
     <link rel="stylesheet" href="css/fonts.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -28,12 +29,12 @@
         </div>
 
         <div class="drawer-nav-items flexbox">
-            <a href="index.html">Home</a>
-            <a href="locations.html">Locations</a>
+            <a class="drawer-link" href="index.html">Home</a>
+            <a class="drawer-link" href="locations.html">Locations</a>
             <!-- <div class="drawer-nav-items-sub">
-                <a href="locations.html">All Locations</a>
+                <a class="drawer-link" href="locations.html">All Locations</a>
             </div> -->
-            <a href="faq.html">FAQ</a>
+            <a class="drawer-link" href="faq.html">FAQ</a>
         </div>
     </nav>
 
@@ -44,7 +45,9 @@
             </div>
 
             <div class="right">
-                <img class="logo" src="img/history-footsteps-logo.png" alt="History Footsteps Logo">
+                <a href="index.html">
+                    <img class="logo" src="img/history-footsteps-logo.png" alt="History Footsteps Logo">
+                </a>
             </div>
         </nav>
 
@@ -172,6 +175,8 @@
                     </h2>
                 </div>
             </a>
+
+            <div class="card-wrapper grid-filler"></div>
         </div>
     </section>
 
