@@ -16,6 +16,7 @@
 
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/style.css">
+
     <link rel="stylesheet" href="css/fonts.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -24,16 +25,20 @@
 <body>
     <nav id="drawer-nav" class="flexbox">
         <div class="drawer-nav-top flexbox">
-            <img id="close-menu" class="icon" src="img/close.svg" alt="close button" aria-label="close menu button">
+            <!-- <img id="close-menu" class="icon" src="img/close.svg" alt="close button" aria-label="close menu button"> -->
+
+            <svg id="close-menu">
+                <path d="M29.80112,25,49.00565,5.79548a3.39489,3.39489,0,0,0,0-4.80112v0a3.395,3.395,0,0,0-4.80112,0L25,20.19886,5.79547.99433a3.395,3.395,0,0,0-4.80112,0v0a3.39489,3.39489,0,0,0,0,4.80112L20.19888,25,.99435,44.20453a3.3949,3.3949,0,1,0,4.80112,4.80112L25,29.80112,44.20453,49.00565a3.3949,3.3949,0,1,0,4.80112-4.80112Z"/>
+            </svg>
         </div>
 
         <div class="drawer-nav-items flexbox">
-            <a href="index.html">Home</a>
-            <a href="locations.html">Locations</a>
+            <a class="drawer-link" href="index.html">Home</a>
+            <a class="drawer-link" href="locations.html">Locations</a>
             <!-- <div class="drawer-nav-items-sub">
-                <a href="locations.html">All Locations</a>
+                <a class="drawer-link" href="locations.html">All Locations</a>
             </div> -->
-            <a href="faq.html">FAQ</a>
+            <a class="drawer-link" href="faq.html">FAQ</a>
         </div>
     </nav>
 

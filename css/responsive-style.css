@@ -1,0 +1,60 @@
+@media only screen and (max-width: 1440px) {
+    .card-wrapper {
+        margin-bottom: 3em;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .card-wrapper {
+        margin-bottom: 2.5em;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .card-wrapper {
+        width: 30%
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .card-text {
+        font-size: 1.7em;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    section {
+        padding: 2em;
+    }
+    .card-wrapper {
+        width: 47.5%
+    }
+}
+
+@media only screen and (max-width: 600px) {}
+
+@media only screen and (max-width: 500px) {
+    section {
+        padding: 2em;
+    }
+    .location-card-grid {
+        flex-direction: column;
+    }
+    .card-wrapper {
+        width: 100%;
+    }
+    .footer {
+        flex-direction: column;
+    }
+    .footer a:not(:last-child),
+    .footer a:last-child {
+        border-right: none;
+        padding: 0.25em;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .header-wrapper h1 {
+        font-size: 3em;
+    }
+}

@@ -21,11 +21,16 @@ img {
     height: auto;
 }
 
+svg {
+    width: auto;
+    height: auto;
+}
+
 .icon {
-    max-height: 2em;
+    max-height: 1.5em;
     width: auto;
     /* width: fit-content;
-    aspect-ratio: 1 / 1; */
+aspect-ratio: 1 / 1; */
 }
 
 .logo {
@@ -39,6 +44,10 @@ img {
     cursor: pointer;
 }
 
+#close-menu:hover {
+    fill: var(--pink);
+}
+
 .btn {
     text-decoration: none;
     color: var(--white);
@@ -47,6 +56,7 @@ img {
     border-radius: 0.5em;
     display: block;
     max-width: 8em;
+    height: fit-content;
     text-align: center;
     /* text-transform: uppercase; */
     transition: background 300ms;
@@ -102,7 +112,7 @@ section {
     flex-direction: column;
 }
 
-.drawer-nav-items a {
+.drawer-link {
     text-decoration: none;
     color: black;
     font-size: 2em;
@@ -117,6 +127,10 @@ section {
     font-size: 1.5em;
     font-family: 'Open Sans', sans-serif;
     font-weight: normal;
+}
+
+.drawer-nav-item-active {
+    color: var(--greenForest);
 }
 
 .drawer-nav-items a:hover {
@@ -136,10 +150,10 @@ section {
 #landing {
     background-color: var(--yellowMango);
     /* background-image: url(../img/b-line_desktop.svg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position-x: right;
-    background-position-y: bottom; */
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position-x: right; */
+    /* background-position-y: bottom; */
 }
 
 .landing-content {
@@ -153,7 +167,7 @@ section {
 
 
 /* #landing h1 {
-    text-transform: uppercase;
+text-transform: uppercase;
 } */
 
 #landing h3 {
@@ -199,6 +213,11 @@ section {
     margin-right: 2em;
 }
 
+.grid-filler {
+    visibility: hidden;
+    margin-bottom: 0 !important;
+}
+
 .card-wrapper {
     text-decoration: none;
     background: var(--yellowMango);
@@ -208,7 +227,7 @@ section {
     cursor: pointer;
     display: flex;
     width: 22.5%;
-    margin-bottom: 2em;
+    margin-bottom: 4em;
 }
 
 .card {
@@ -303,10 +322,7 @@ footer {
 .location-card-grid {
     flex-wrap: wrap;
     width: 100%;
-}
-
-.location-card-grid .card-wrapper:not(:last-child) {
-    margin-right: 2em;
+    justify-content: space-between;
 }
 
 .faq-grid {
@@ -318,7 +334,17 @@ footer {
 .question-container {
     border: solid 2px var(--greenForest);
     border-radius: 30px;
-    padding: 1em 1.25em;
+    padding: 1em 1.5em;
+    transition: padding 300ms;
+}
+
+.question-container:hover {
+    cursor: pointer;
+    /* box-shadow: 0 2px 4px 2px rgba( 125, 125, 125, 0.5); */
+}
+
+.question-active {
+    padding: 1.25em 1.5em;
 }
 
 .question-container:not(:last-child) {
@@ -327,13 +353,84 @@ footer {
 
 .question {
     justify-content: space-between;
+    align-items: center;
+}
+
+.question-active .question {
+    padding-bottom: 1em;
 }
 
 .question p {
     font-weight: bold;
-    padding-bottom: 0.5em;
+    margin-bottom: 0;
 }
 
-.question-active p {
+.question-active .question p {
     text-decoration: underline;
+    text-decoration-color: var(--greenForest);
+    -moz-text-decoration-color: var(--greenForest);
+}
+
+.question .icon {
+    width: 1.5em;
+}
+
+.question-active .question .icon {
+    transform: rotate(180deg);
+}
+
+.answer {
+    display: none;
+}
+
+.form-field:not(:last-child) {
+    margin-bottom: 1em;
+}
+
+.form-field label,
+.form-field input:not(#faq-submit) {
+    display: block;
+}
+
+.form-field input:not(#faq-submit),
+.form-field textarea {
+    min-width: 60%;
+    max-width: 100%;
+    padding: 0.5em 0.75em;
+    border-radius: 0.5em;
+    border: 1px solid var(--greenForest);
+    margin-top: 0.5em;
+    resize: none;
+    outline: none;
+    transition: border-width 300ms;
+}
+
+.form-field input:hover:not(#faq-submit),
+.form-field textarea:hover {
+    border-width: 1.5px;
+}
+
+.form-field input:focus:not(#faq-submit),
+.form-field textarea:focus {
+    border-width: 2px;
+}
+
+.form-field-last {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.form-field-last .textarea-wrapper {
+    min-width: 60%;
+    max-width: 100%;
+}
+
+.textarea-wrapper textarea {
+    width: 100%;
+}
+
+#faq-submit {
+    min-width: fit-content;
+    border: none;
+    align-self: flex-end;
 }
