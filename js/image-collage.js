@@ -85,3 +85,24 @@ function setupVerticalMarkers() {
         }
     }
 }
+
+$(window).scroll(function() {
+    showIndicators(window.scrollY);
+})
+
+var scrollYPos = window.scrollY;
+
+function showIndicators(position) {
+    // var landing = $(".landing-location-detail")[0];
+    // var landingHeight = landing.offsetHeight;
+
+    var mainContent = $(".main-content")[0];
+    var mainContentOffset = mainContent.offsetTop;
+
+    if (position >= mainContentOffset / 2) {
+        $(".vertical-marker").first().css("display", "block");
+    } else {
+        $(".vertical-marker").first().css("display", "none");
+    }
+
+}

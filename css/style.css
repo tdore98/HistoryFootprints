@@ -90,6 +90,10 @@ section {
     width: 100%;
 }
 
+#faq {
+    min-height: 87.5vh;
+}
+
 .landing-location-detail {
     padding: 0;
     width: 100%;
@@ -620,16 +624,21 @@ footer {
     flex-direction: column;
 }
 
+#location-detail-content .content-wrapper {
+    padding-top: 2em;
+}
+
 #location-detail-content .content-wrapper p:not(:last-of-type) {
     padding-bottom: 1em;
 }
 
-#location-detail-content .content-wrapper img {
-    padding: 2em 0;
-}
-
 #location-detail-content .vertical-marker {
     margin-left: 10%;
+    padding-top: 2em;
+    position: fixed;
+    top: 50%;
+    right: 4em;
+    display: none;
 }
 
 #location-detail-content .vertical-marker .marker {
