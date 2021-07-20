@@ -2,36 +2,73 @@
     .card-wrapper {
         margin-bottom: 3em;
     }
+    #landing {
+        background-image: none;
+    }
 }
 
 @media only screen and (max-width: 1280px) {
     .card-wrapper {
         margin-bottom: 2.5em;
     }
+    .card-container .card-wrapper:not(:first-child) {
+        margin-left: 1.5em;
+    }
+    .card-text {
+        font-size: 1.5em;
+    }
 }
 
 @media only screen and (max-width: 1024px) {
     .card-wrapper {
-        width: 30%
+        width: 30%;
+        -ms-flex: 30%;
+        flex: 30%;
+    }
+    .card-container .card-wrapper {
+        width: 47.5%;
+        -ms-flex: 47.5%;
+        flex: 47.5%;
+    }
+    .card-container .card-wrapper:nth-child(odd) {
+        margin-left: 0;
+    }
+    #landing h3 {
+        font-size: 1.2em;
+    }
+    .faq-grid {
+        width: 100%;
+    }
+    .form-field-last {
+        flex-direction: column;
+    }
+    #faq-submit {
+        align-self: flex-start;
+        margin-top: 0.5em;
     }
 }
 
-@media only screen and (max-width: 900px) {
-    .card-text {
-        font-size: 1.7em;
-    }
-}
+@media only screen and (max-width: 900px) {}
 
 @media only screen and (max-width: 768px) {
     section {
         padding: 2em;
     }
     .card-wrapper {
-        width: 47.5%
+        width: 47.5%;
+        -ms-flex: 47.5%;
+        flex: 47.5%;
     }
 }
 
-@media only screen and (max-width: 600px) {}
+@media only screen and (max-width: 600px) {
+    .card-container .card-wrapper:nth-child(even) {
+        margin-left: 1em;
+    }
+    .card-wrapper {
+        margin-bottom: 1em;
+    }
+}
 
 @media only screen and (max-width: 500px) {
     section {
@@ -42,6 +79,8 @@
     }
     .card-wrapper {
         width: 100%;
+        -ms-flex: 100%;
+        flex: 100%;
     }
     .footer {
         flex-direction: column;
@@ -51,10 +90,36 @@
         border-right: none;
         padding: 0.25em;
     }
+    .home-header-container h2 {
+        font-size: 2em;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    #landing h1,
+    .header-wrapper h1 {
+        font-size: 3em;
+    }
 }
 
 @media only screen and (max-width: 425px) {
-    .header-wrapper h1 {
-        font-size: 3em;
+    #landing .content-left {
+        flex: 100% 0 0;
+        -ms-flex: 100%;
+        width: 100%;
+    }
+    .card-container {
+        flex-direction: column;
+    }
+    .card-wrapper:nth-child(odd),
+    .card-wrapper:nth-child(even),
+    .card-wrapper:not(:first-child),
+    .card-container .card-wrapper:nth-child(odd),
+    .card-container .card-wrapper:nth-child(even),
+    .card-container .card-wrapper:not(:first-child) {
+        margin-left: 0;
+        width: 100%;
+        flex: 100% 0 0;
+        -ms-flex: 100%;
     }
 }
