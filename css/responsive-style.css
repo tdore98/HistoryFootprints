@@ -36,6 +36,16 @@
     #landing h3 {
         font-size: 1.2em;
     }
+    .faq-grid {
+        width: 100%;
+    }
+    .form-field-last {
+        flex-direction: column;
+    }
+    #faq-submit {
+        align-self: flex-start;
+        margin-top: 0.5em;
+    }
 }
 
 @media only screen and (max-width: 900px) {}
@@ -85,11 +95,14 @@
     }
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 450px) {
     #landing h1,
     .header-wrapper h1 {
         font-size: 3em;
     }
+}
+
+@media only screen and (max-width: 425px) {
     #landing .content-left {
         flex: 100% 0 0;
         -ms-flex: 100%;

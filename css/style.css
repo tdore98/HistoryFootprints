@@ -48,11 +48,6 @@ aspect-ratio: 1 / 1; */
         cursor: pointer;
     }
     
-    #close-menu:hover {
-        fill: var(--pink);
-        cursor: pointer;
-    }
-    
     .btn {
         text-decoration: none;
         color: var(--white);
@@ -82,7 +77,11 @@ aspect-ratio: 1 / 1; */
     }
     
     .btn:hover {
-        background: var(--pink);
+        color: var(--blueNavy);
+        /* background: #ccc; */
+        background: white;
+        font-weight: bold;
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.2);
     }
     
     section {
@@ -144,22 +143,29 @@ aspect-ratio: 1 / 1; */
     }
     
     .drawer-nav-item-active {
-        color: var(--greenForest);
+        color: var(--blueNavy);
+        font-weight: 700;
+        opacity: 0.7;
+        cursor: default;
     }
     
-    .drawer-nav-items a:hover {
-        color: var(--pink);
+    .drawer-nav-items a:hover:not(.drawer-nav-item-active) {
+        color: var(--blueNavy);
         cursor: pointer;
+        text-decoration: underline;
     }
     
-    #logo {
+    #menu,
+    #close-menu {
         fill: var(--greenForest);
     }
     
     #menu:hover,
-    #logo:hover {
+    #logo:hover,
+    #close-menu:hover {
         cursor: pointer;
-        fill: var(--pink);
+        opacity: 0.6;
+        transition: opacity 300ms;
     }
     
     #logo {
