@@ -152,6 +152,10 @@ aspect-ratio: 1 / 1; */
         cursor: pointer;
     }
     
+    #logo {
+        fill: var(--greenForest);
+    }
+    
     #menu:hover,
     #logo:hover {
         cursor: pointer;
