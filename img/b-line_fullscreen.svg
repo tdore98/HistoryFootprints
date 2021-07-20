@@ -1,0 +1,47 @@
+<svg id="fe214945-0f90-4f69-a128-669bc7cd03e0" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 676.2694 861.55671">
+  <defs>
+    <style>
+      .a5087610-54c2-4bca-b3f3-6efe157782de, .adc88e06-a7f0-4e0f-9422-374ab8e56b3d, .b343144b-fb90-47ff-a1fd-a8eb945aace7, .e4e563f7-9a51-4f5e-ab91-8d013361153a, .f2fdf89f-36f6-4c93-882d-8d51c95b0d57, .fb0a52c2-a9e0-4d98-8525-3cefe3287e4c {
+        fill: none;
+        stroke: #146232;
+      }
+
+      .b343144b-fb90-47ff-a1fd-a8eb945aace7 {
+        stroke-linecap: round;
+      }
+
+      .a5087610-54c2-4bca-b3f3-6efe157782de, .adc88e06-a7f0-4e0f-9422-374ab8e56b3d, .b343144b-fb90-47ff-a1fd-a8eb945aace7, .e4e563f7-9a51-4f5e-ab91-8d013361153a, .fb0a52c2-a9e0-4d98-8525-3cefe3287e4c {
+        stroke-width: 15px;
+      }
+
+      .f2fdf89f-36f6-4c93-882d-8d51c95b0d57 {
+        stroke-width: 10px;
+      }
+
+      .fb0a52c2-a9e0-4d98-8525-3cefe3287e4c {
+        stroke-dasharray: 100 65;
+      }
+
+      .a5087610-54c2-4bca-b3f3-6efe157782de {
+        stroke-dasharray: 100 75;
+      }
+
+      .adc88e06-a7f0-4e0f-9422-374ab8e56b3d {
+        stroke-linejoin: round;
+        stroke-dasharray: 150 75;
+      }
+    </style>
+  </defs>
+  <g>
+    <line class="b343144b-fb90-47ff-a1fd-a8eb945aace7" x1="7.5" y1="830.0727" x2="31.4839" y2="854.05671"/>
+    <line class="b343144b-fb90-47ff-a1fd-a8eb945aace7" x1="32.1883" y1="853.85169" x2="56.1722" y2="829.86768"/>
+    <circle class="f2fdf89f-36f6-4c93-882d-8d51c95b0d57" cx="86.8934" cy="146.86768" r="23"/>
+    <circle class="f2fdf89f-36f6-4c93-882d-8d51c95b0d57" cx="624.8934" cy="44.86718" r="23"/>
+    <circle class="f2fdf89f-36f6-4c93-882d-8d51c95b0d57" cx="340.8934" cy="307.86768" r="23"/>
+    <circle class="f2fdf89f-36f6-4c93-882d-8d51c95b0d57" cx="443.8934" cy="697.86768" r="23"/>
+    <path class="fb0a52c2-a9e0-4d98-8525-3cefe3287e4c" d="M1038.5,251.5c232-43.5,169.571-89.423,252.5-113.5,57.5-16.694,101-39.5,248.5-4.4998m26,35.9995C1633.5,232,1624.5,378.7,1296.5,413.5" transform="translate(-930.6066 -107.63232)"/>
+    <path class="a5087610-54c2-4bca-b3f3-6efe157782de" d="M1249,423c-29.92,5.718-69.683,18.937-95.5,40.395-29.118,24.202-40.496,58.885,0,105.105,95.5,109,356.767-22.377,403.5,47,48.5,72-67,179-157.5,185.5" transform="translate(-930.6066 -107.63232)"/>
+    <path class="adc88e06-a7f0-4e0f-9422-374ab8e56b3d" d="M1352,811.5c-104.5,22.5-313-6-349.5,4.5-40.2313,11.574-41.5,25.5-41.5,60.5v80" transform="translate(-930.6066 -107.63232)"/>
+    <path class="e4e563f7-9a51-4f5e-ab91-8d013361153a" d="M961,938.5V902" transform="translate(-930.6066 -107.63232)"/>
+  </g>
+</svg>

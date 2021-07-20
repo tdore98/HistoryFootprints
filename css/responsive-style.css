@@ -2,6 +2,9 @@
     .card-wrapper {
         margin-bottom: 3em;
     }
+    #landing {
+        background-image: none;
+    }
 }
 
 @media only screen and (max-width: 1280px) {
