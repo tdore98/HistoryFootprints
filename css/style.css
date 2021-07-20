@@ -227,10 +227,12 @@ text-transform: uppercase;
 
 .card-container {
     justify-content: space-between;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
 }
 
-.card-container .card-wrapper:not(:last-child) {
-    margin-right: 2em;
+.card-container .card-wrapper:not(:first-child) {
+    margin-left: 2em;
 }
 
 .grid-filler {
